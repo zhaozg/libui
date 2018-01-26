@@ -127,6 +127,7 @@ BOOL handleParentMessages(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam, LR
 		return runWM_NOTIFY(wParam, lParam, lResult);
 	case WM_HSCROLL:
 		return runWM_HSCROLL(wParam, lParam, lResult);
+/*
 	case WM_CTLCOLORSTATIC:
 	case WM_CTLCOLORBTN:
 		if (parentBrush != NULL)
@@ -139,6 +140,7 @@ BOOL handleParentMessages(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam, LR
 			return FALSE;
 		*lResult = (LRESULT) parentBrush;
 		return TRUE;
+*/
 	}
 	return FALSE;
 }

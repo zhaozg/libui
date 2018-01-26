@@ -50,6 +50,7 @@ static LRESULT CALLBACK containerWndProc(HWND hwnd, UINT uMsg, WPARAM wParam, LP
 		mmi->ptMinTrackSize.x = minwid;
 		mmi->ptMinTrackSize.y = minht;
 		return lResult;
+/*
 	case WM_PAINT:
 		dc = BeginPaint(hwnd, &ps);
 		if (dc == NULL) {
@@ -66,6 +67,7 @@ static LRESULT CALLBACK containerWndProc(HWND hwnd, UINT uMsg, WPARAM wParam, LP
 		uiWindowsEnsureGetClientRect(hwnd, &r);
 		paintContainerBackground(hwnd, (HDC) wParam, &r);
 		return 0;
+*/
 	case WM_ERASEBKGND:
 		// avoid some flicker
 		// we draw the whole update area anyway
